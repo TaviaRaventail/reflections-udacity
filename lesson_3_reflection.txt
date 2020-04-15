@@ -18,14 +18,16 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    You can check for changes without an internet connection.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    You would have to send files back and forth, with text describing what had changed.
+	You would be able to collaborate using just email, without requiring GitHub accounts.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    When you don't want to affect or change the master branch until you are ready to do so.
+	
