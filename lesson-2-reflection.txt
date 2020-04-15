@@ -3,19 +3,37 @@ What happens when you initialize a repository? Why do you need to do it?
   
 
 How is the staging area different from the working directory and the repository?
-
+  The staging area is where files are 'moved' to when changes are complete.
+  The working directory is where files are stored so you can make changes.
+  The repository is the entire history of all of the files.
 What value do you think it offers?
+  Allows you to pick and choose what gets added to a commit.  Also allows for changing your mind.
+
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+  Use git diff --staged to see the changes in the files in the staging area vs repository.
+
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+  Feature work vs bug fixes.  Major versions.
+  Work can be done similtaneously and tested, without interfering with each other.
+  
 
 How do the diagrams help you visualize the branch structure?
+  Help you to figure out where things are and their relationship to other commits.
+  
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+  Brings together all changes made in the two branches, and looks for conflicts.
+  Because we are bringing things together and moving the HEAD.
+  
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+  Pros: If there are no conflicts, it's all done very quickly and easily.
+        If there are conflicts, they are easily found and examined.
+  Cons: For example, because two edits in different places in a file (which are done on different branches) may not cause auto-merge to raise a conflict but may not actually work together.
+  
